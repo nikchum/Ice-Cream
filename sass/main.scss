@@ -1,0 +1,23 @@
+@import "./utils/variables";
+@import "./utils/base";
+@import "./components/logo";
+@import "./components/container";
+@import "./components/button";
+
+@import "./blocks-index/hero-header";
+@import "./blocks-index/products";
+@import "./blocks-index/about";
+@import "./blocks-index/advantages";
+@import "./blocks-index/gallery";
+@import "./blocks-index/cust-rev";
+@import "./blocks-index/contacts";
+@import "./blocks-index/footer";
+
+.products,
+.about,
+.advantages,
+.gallery,
+.contacts,
+.footer {
+    display: block;
+}

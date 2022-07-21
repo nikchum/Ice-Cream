@@ -1,0 +1,37 @@
+.gallery {
+    @media screen and (max-width: 767px) {
+        padding-top: 60px;
+
+        background-image: linear-gradient(to bottom,
+                #FFF5F6 48%,
+                #ffffff 15%,
+                #ffffff 15%,
+            );
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        padding-top: 64px;
+
+        background-image: linear-gradient(to bottom,
+                #FFF5F6 65%,
+                #ffffff 15%,
+                #ffffff 15%,
+            );
+    }
+
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 120px;
+
+        background-image: linear-gradient(to bottom,
+                #FFF5F6 36%,
+                #ffffff 15%,
+                #ffffff 15%,
+            );
+    }
+
+}
+
+.gallery__img {
+    width: 100%;
+}

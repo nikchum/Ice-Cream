@@ -1,0 +1,225 @@
+.about {
+    padding-top: 60px;
+
+    background-color: #FFF5F6;
+
+    @media screen and (max-width: 767px) {
+        padding-bottom: 40px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        padding-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 40px;
+    }
+}
+
+.about__label {
+    font-family: $font-family2;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: $color-label;
+
+    @media screen and (max-width: 767px) {
+        font-size: 18px;
+        line-height: 21px;
+        margin-bottom: 15px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        font-size: 26px;
+        line-height: 30px;
+        margin-bottom: 16px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 30px;
+        line-height: 34px;
+        margin-bottom: 16px;
+    }
+}
+
+
+.about__title {
+    font-family: $font-family2;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: $color-title;
+
+    @media screen and (max-width: 767px) {
+        font-size: 34px;
+        line-height: 39px;
+        margin-bottom: 32px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        font-size: 48px;
+        line-height: 55px;
+        margin-bottom: 40px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 58px;
+        line-height: 66px;
+        letter-spacing: 0.06em;
+        margin-bottom: 60px;
+    }
+}
+
+.about__box {
+    @media screen and (min-width: 1200px) {
+        background-image: url(../images/about-section.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: top;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+
+    @media screen and (min-width: 1200px) {
+        align-items: center;
+    }
+
+}
+
+.about__img {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 40px;
+
+        width: 280px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: 336px;
+        height: 336px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 501px;
+    }
+}
+
+.about__thumb-text {
+    @media screen and (max-width: 767px) {
+
+        background-image: url(../images/about-section.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 0 30%;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-left: 32px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 100px;
+        width: 463px;
+    }
+}
+
+.about__subtitle {
+    font-weight: 500;
+
+    color: #000000;
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 40px;
+
+        max-width: 245px;
+
+        font-size: 12px;
+        line-height: 1.62;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-bottom: 40px;
+
+        font-size: 14px;
+        line-height: 1.76;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 32px;
+
+        font-size: 16px;
+        line-height: 1.76;
+    }
+}
+
+.about__text {
+    font-weight: 500;
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 20px;
+
+        max-width: 245px;
+
+        font-size: 12px;
+        line-height: 1.62;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-bottom: 25px;
+
+        font-size: 14px;
+        line-height: 1.76;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 30px;
+
+        font-size: 14px;
+        line-height: 1.94;
+    }
+}
+
+
+.about__btn {
+    width: 176px;
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+
+    color: #D41443;
+    background-color: #fff;
+
+    transition: background-color 250ms linear;
+
+    @media screen and (max-width: 767px) {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    @media screen and (min-width: 768px) {
+        font-size: 16px;
+        line-height: 21px;
+    }
+
+    &:hover,
+    &:focus {
+        background-color: #ECEBEB;
+    }
+}
+
+.about__btn-icon {
+    margin-left: 15px;
+
+    width: 8px;
+    height: 8px;
+    background-image: url(../images/about-btn.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
