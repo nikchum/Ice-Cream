@@ -16,6 +16,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
@@ -112,7 +117,47 @@
       </section>
       <section class="cast-rev">
         <h2 class="visually-hidden">Customer Reviews</h2>
-        <div class="container"></div>
+        <div class="container cast-rev__container">
+          <div class="cast-rev__box">
+            <div class="cast-rev__slide">
+              <img src="./images/rev1.png" alt="photo client" class="cast__rev__img" />
+              <div class="cast-rev_thumb">
+                <p class="cast-rev__rev">
+                  Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+                  hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+                </p>
+              </div>
+
+              <p class="cast-rev__name">Emily, Los Angeles</p>
+            </div>
+          </div>
+
+          <div class="cast-rev__box">
+            <div class="cast-rev__slide">
+              <img src="./images/rev2.png" alt="photo client" class="cast__rev__img" />
+              <div class="cast-rev_thumb">
+                <p class="cast-rev__rev">
+                  Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+                  hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+                </p>
+              </div>
+              <p class="cast-rev__name">Emily, Los Angeles</p>
+            </div>
+          </div>
+
+          <div class="cast-rev__box">
+            <div class="cast-rev__slide">
+              <img src="./images/rev3.png" alt="photo client" class="cast__rev__img" />
+              <div class="cast-rev_thumb">
+                <p class="cast-rev__rev">
+                  Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+                  hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+                </p>
+              </div>
+              <p class="cast-rev__name">Emily, Los Angeles</p>
+            </div>
+          </div>
+        </div>
       </section>
       <section class="contacts">
         <h2 class="visually-hidden">Contacts</h2>
@@ -281,8 +326,13 @@
         </button>
       </div>
     </div> -->
-
-    <script src="./js/modal.js"></script>
-    <script src="./js/menu.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="./js/main.js"></script>
+    <!-- <script src="./js/modal.js" type="module"></script> -->
+    <!-- <script src="./js/menu.js" type="module"></script> -->
   </body>
 </html>

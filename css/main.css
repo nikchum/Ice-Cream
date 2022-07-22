@@ -638,8 +638,200 @@ img {
   width: 100%;
 }
 
-.cast-rev {
-  padding-top: 150px;
+@media screen and (max-width: 767px) {
+  .cast-rev {
+    padding: 60px 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .cast-rev {
+    padding: 60px 0 80px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cast-rev {
+    padding: 120px 0;
+  }
+}
+
+.cast-rev__slide {
+  text-align: center;
+}
+
+.cast__rev__img {
+  margin-right: auto;
+  margin-left: auto;
+}
+@media screen and (max-width: 767px) {
+  .cast__rev__img {
+    margin-bottom: 32px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .cast__rev__img {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cast__rev__img {
+    margin-bottom: 16px;
+  }
+}
+
+.cast-rev_thumb {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 767px) {
+  .cast-rev_thumb {
+    margin-bottom: 16px;
+    padding: 43px 50px 17px;
+    background-color: #FAFAFA;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .cast-rev_thumb {
+    margin-bottom: 4px;
+    width: 620px;
+    padding: 36px 6px 44px;
+    background-color: #FDFDFD;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cast-rev_thumb {
+    margin-bottom: 16px;
+    width: 968px;
+    padding: 47px 74px 39px;
+    background-color: #FAFAFA;
+  }
+}
+
+.cast-rev__rev {
+  position: relative;
+  font-weight: 500;
+  text-align: center;
+  z-index: 1;
+  color: #000000;
+}
+@media screen and (max-width: 767px) {
+  .cast-rev__rev {
+    max-width: 157px;
+    font-size: 12px;
+    line-height: 2.55;
+    background-image: repeating-linear-gradient(to bottom, #FAFAFA 0, #FAFAFA 28px, #E1E1E1 30px, #E1E1E1 28px);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .cast-rev__rev {
+    padding: 0 40px;
+    font-size: 14px;
+    line-height: 2.16;
+    background-image: repeating-linear-gradient(to bottom, #FDFDFD 0, #FDFDFD 28px, #E1E1E1 30px, #E1E1E1 28px);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cast-rev__rev {
+    padding: 0 35px !important;
+    font-size: 16px;
+    line-height: 1.86;
+    background-image: repeating-linear-gradient(to bottom, #FAFAFA 0, #FAFAFA 28px, #E1E1E1 30px, #E1E1E1 28px);
+  }
+}
+.cast-rev__rev::after {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  content: "";
+  width: 54px;
+  height: 40px;
+  background-image: url(../images/slider1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media screen and (max-width: 767px) {
+  .cast-rev__rev::after {
+    top: -6%;
+    left: -7%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .cast-rev__rev::after {
+    top: -15%;
+    left: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cast-rev__rev::after {
+    top: -20%;
+    left: 0;
+  }
+}
+
+.cast-rev__name {
+  font-weight: 500;
+  line-height: 1.86;
+  text-align: center;
+  color: #000000;
+}
+@media screen and (max-width: 767px) {
+  .cast-rev__name {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .cast-rev__name {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cast-rev__name {
+    font-size: 20px;
+  }
+}
+.cast-rev__name::before {
+  display: flex;
+  margin-bottom: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  content: "";
+  width: 32px;
+  height: 4px;
+  background-image: url(../images/slider2.png);
+}
+
+.slick-dots {
+  display: flex !important;
+  justify-content: center;
+}
+@media screen and (max-width: 767px) {
+  .slick-dots {
+    margin-top: 16px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .slick-dots {
+    margin-top: 32px;
+  }
+}
+.slick-dots li:not(:last-child) {
+  margin-right: 18px;
+}
+.slick-dots button {
+  font-size: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #D9D9D9;
+}
+.slick-dots .slick-active button {
+  background-image: url(../images/slider-active.svg);
+  background-repeat: no-repeat;
+  width: 12px;
+  height: 12px;
+  background-size: contain;
+  background-color: #ffffff;
 }
 
 @media screen and (max-width: 767px) {
@@ -1142,7 +1334,7 @@ img {
 
 .footer__tel {
   color: #D41443;
-  transition: transform 250ms linear;
+  transition: color 250ms linear;
 }
 .footer__tel:hover, .footer__tel:focus {
   color: #907e82;
@@ -1188,13 +1380,4 @@ img {
     line-height: 1.86;
     text-align: center;
   }
-}
-
-.products,
-.about,
-.advantages,
-.gallery,
-.contacts,
-.footer {
-  display: block;
 }/*# sourceMappingURL=main.css.map */
