@@ -4,6 +4,7 @@
 @import "./components/container";
 @import "./components/button";
 
+@import "./blocks-index/modal";
 @import "./blocks-index/hero-header";
 @import "./blocks-index/products";
 @import "./blocks-index/about";
@@ -12,10 +13,3 @@
 @import "./blocks-index/cust-rev";
 @import "./blocks-index/contacts";
 @import "./blocks-index/footer";
-
-.products,
-.about,
-.advantages,
-.gallery,
-.contacts,
-.footer {}

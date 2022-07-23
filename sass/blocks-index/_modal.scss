@@ -1,0 +1,221 @@
+.backdrop {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+
+    transition: opacity 250ms linear;
+    overflow-y: scroll;
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.backdrop.is-hidden .modal {
+    transform: scale(1.1);
+}
+
+.modal {
+    position: absolute;
+    padding: 40px;
+
+    background-color: #fff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+    transform: scale(1);
+    transition: transform 250ms linear;
+
+    @media screen and (max-width: 1199px) {
+        max-width: 455px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 528px;
+    }
+}
+
+.form {}
+
+.form__title {
+    margin-bottom: 12px;
+
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.form__label {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+
+    transition: color 250ms linear;
+
+    &:hover,
+    &:focus-within {
+        color: #D41443;
+    }
+}
+
+.form__label--margin {
+    margin-bottom: 20px;
+}
+
+.form__input {
+    display: flex;
+    height: 40px;
+    margin-top: 4px;
+    padding-left: 42px;
+
+    outline: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    transition: border-color 250ms linear;
+}
+
+.form__label:hover .form__icon,
+.form__label:focus-within .form__icon,
+.form__label:hover .form__input,
+.form__label:focus-within .form__input,
+.form__label:hover .form__textarea,
+.form__label:focus-within .form__textarea {
+    fill: #D41443;
+    border-color: #D41443;
+}
+
+
+
+.form__textarea {
+    height: 120px;
+    margin-top: 4px;
+    padding: 12px 16px;
+
+    outline: none;
+    resize: none;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    transition: border-color 250ms linear;
+}
+
+.form__icon {
+    position: absolute;
+    left: 12px;
+    bottom: 11px;
+
+    fill: #212121;
+    transition: fill 250ms linear;
+}
+
+
+.form__check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 31px;
+
+    font-weight: 400;
+
+    @media screen and (max-width: 1199px) {
+        font-size: 12px;
+        line-height: 1.17;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.71;
+    }
+}
+
+.form__check-input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.form__check-icon {
+    margin-right: 17px;
+    width: 16px;
+    height: 15px;
+    border: 2px solid #212121;
+    border-radius: 2px;
+}
+
+.form__check-input:checked+.form__check-icon {
+    background-image: url(../images/check.svg);
+    background-size: contain;
+    background-color: #D41443;
+    border-color: transparent;
+    background-origin: border-box;
+}
+
+.form__check-link {
+    color: #D41443;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.form__button {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 55px;
+
+    border-radius: 22px;
+    font-weight: 400;
+    background-color: #D41443;
+    color: #ffffff;
+    transition: background-color 250ms linear;
+
+    &:hover,
+    &:focus {
+
+        background-color: #6d031d;
+    }
+}
+
+.modal__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 8px;
+    margin-right: 8px;
+    width: 30px;
+    height: 30px;
+
+    fill: #D41443;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    transition: fill 250ms linear;
+
+    &:hover,
+    &:focus {
+        fill: #FFB8CA;
+    }
+}

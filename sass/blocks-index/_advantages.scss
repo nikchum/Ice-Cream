@@ -62,6 +62,7 @@
     }
 
     &::before {
+        margin-bottom: 16px;
         display: block;
         content: '';
         background-repeat: no-repeat;
@@ -71,7 +72,9 @@
     }
 
     &--icon1::before {
+
         @media screen and (max-width: 767px) {
+
             background-image: url(../images/adv1mob.png);
         }
 
@@ -99,6 +102,7 @@
     color: #000000;
 
     @media screen and (max-width: 767px) {
+        width: 200px;
         font-size: 12px;
         line-height: 1.7;
     }

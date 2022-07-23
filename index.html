@@ -24,9 +24,85 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header></header>
+    <header class="header">
+      <div class="container header__container">
+        <div class="header__box">
+          <a href="./index.html" class="logo">
+            <img src="./images/header-logo.png" alt="logo" />
+          </a>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="./index.html" class="nav__link nav__link--current">Home</a>
+              </li>
+              <li class="nav__item">
+                <a href="#gallery" class="nav__link">About us</a>
+              </li>
+              <li class="nav__item">
+                <a href="#about" class="nav__link">How it’s made?</a>
+              </li>
+              <li class="nav__item">
+                <a href="#products" class="nav__link">Our products</a>
+              </li>
+              <li class="nav__item">
+                <a href="#contacts" class="nav__link">Contact</a>
+              </li>
+            </ul>
+            <svg class="burger" width="199" height="50"><use href=""></use></svg>
+          </nav>
+          <div class="header__box-burger">
+            <button class="burger" data-menu-button>
+              <svg height="40" width="40">
+                <use href="./images/symbol.svg#burger-open"></use>
+              </svg>
+            </button>
+            <button class="btn header__btn" data-modal-open>
+              Buy now
+              <span class="contacts__btn-span2"></span>
+            </button>
+          </div>
+        </div>
+        <div class="hero">
+          <div class="hero__box">
+            <div class="hero__thumb">
+              <h1 class="hero__title">
+                <span class="hero__span">ice cream made with</span>
+                passion
+              </h1>
+              <ul class="hero__list">
+                <li class="hero__item">
+                  <a href="#products" class="hero__link hero__link--red">Products</a>
+                </li>
+                <li class="hero__item">
+                  <a href="#about" class="hero__link hero__link--white">How it’s made?</a>
+                </li>
+              </ul>
+            </div>
+            <ul class="hero__numbers-list">
+              <li class="hero__number-item">
+                <p class="hero__number-text">
+                  16
+                  <span class="hero__number-span">cafes</span>
+                </p>
+              </li>
+              <li class="hero__number-item">
+                <p class="hero__number-text">
+                  23
+                  <span class="hero__number-span">food trucks</span>
+                </p>
+              </li>
+            </ul>
+          </div>
+          <p class="hero__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et
+          </p>
+          <button class="hero__btn" data-modal-open></button>
+        </div>
+      </div>
+    </header>
     <main>
-      <section class="products">
+      <section class="products" id="products">
         <div class="container">
           <p class="products__label">100% natural</p>
           <h2 class="products__title">products</h2>
@@ -58,12 +134,12 @@
           </ul>
         </div>
       </section>
-      <section class="about">
+      <section class="about" id="about">
         <div class="container">
           <p class="about__label">tradition and love</p>
           <h2 class="about__title">how it’s made?</h2>
           <div class="about__box">
-            <img src="./images/about-img.png" alt="" class="about__img" />
+            <img src="./images/about-img.png" alt="milk" class="about__img" />
             <div class="about__thumb-text">
               <p class="about__subtitle">
                 Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus,
@@ -110,7 +186,7 @@
           </ul>
         </div>
       </section>
-      <section class="gallery">
+      <section class="gallery" id="gallery">
         <div class="container">
           <img src="./images/gallery.png" alt="gallery photo" class="gallery__img" />
         </div>
@@ -159,7 +235,7 @@
           </div>
         </div>
       </section>
-      <section class="contacts">
+      <section class="contacts" id="contacts">
         <h2 class="visually-hidden">Contacts</h2>
         <div class="container">
           <ul class="contacts__list">
@@ -269,13 +345,16 @@
         <p class="footer__license">&#169; 2022 - IceCream. All Rights Reserved.</p>
       </div>
     </footer>
-    <!--
+
+    <!-- -------- modal -------- -->
+    -->
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <form class="form">
-          <h2 class="form__title">Оставьте свои данные, мы вам перезвоним</h2>
+          <h2 class="form__title">Leave your contacts, we will call you back</h2>
           <label class="form__label"
-            >Имя
+            >Name
             <input class="form__input" type="text" name="name" />
             <svg class="form__icon" height="18" width="18">
               <use href="./images/symbol.svg#modal1"></use>
@@ -283,7 +362,7 @@
           </label>
 
           <label class="form__label"
-            >Телефон
+            >Phone number
             <input class="form__input" type="tel" name="name" />
             <svg class="form__icon" height="18" width="18">
               <use href="./images/symbol.svg#modal2"></use>
@@ -291,7 +370,7 @@
           </label>
 
           <label class="form__label"
-            >Почта
+            >Email
             <input class="form__input" type="email" name="name" />
             <svg class="form__icon" height="18" width="18">
               <use href="./images/symbol.svg#modal3"></use>
@@ -299,12 +378,12 @@
           </label>
 
           <label class="form__label form__label--margin"
-            >Комментарий
+            >Сomment
             <textarea
               class="form__textarea"
               name="feedback"
               rows="10"
-              placeholder="Введите текст"
+              placeholder="Enter text"
             ></textarea>
           </label>
 
@@ -312,11 +391,11 @@
             <input class="form__check-input" type="checkbox" name="check" />
             <span class="form__check-icon"></span>
 
-            Соглашаюсь с рассылкой и принимаю&nbsp;
-            <a class="form__check-link" href="">Условия договора</a>
+            I agree with the newsletter and accept&nbsp;
+            <a class="form__check-link" href="">Terms of an agreement</a>
           </label>
 
-          <button class="button form__button" type="submit">Отправить</button>
+          <button class="button form__button" type="submit">Send</button>
         </form>
 
         <button class="modal__close" data-modal-close>
@@ -325,14 +404,48 @@
           </svg>
         </button>
       </div>
-    </div> -->
+    </div>
+
+    <!-- --------------- MOB MENU -------------------- -->
+    <div class="container menu">
+      <button class="menu__btn" data-menu-close>
+        <svg height="40" width="40">
+          <use href="./images/symbol.svg#burger-close"></use>
+        </svg>
+      </button>
+      <button class="btn header__btn menu__btn-buy" data-modal-open-mobile>
+        Buy now
+        <span class="contacts__btn-span2 menu__span"></span>
+      </button>
+      <nav class="nav nav--active">
+        <ul class="nav__list nav--flex js-close-menu">
+          <li class="nav__item--mob">
+            <a href="./index.html" class="nav__link nav__link--current">Home</a>
+          </li>
+          <li class="nav__item--mob">
+            <a href="#gallery" class="nav__link">About us</a>
+          </li>
+          <li class="nav__item--mob">
+            <a href="#about" class="nav__link">How it’s made?</a>
+          </li>
+          <li class="nav__item--mob">
+            <a href="#products" class="nav__link">Our products</a>
+          </li>
+          <li class="nav__item--mob">
+            <a href="#contacts" class="nav__link">Contact</a>
+          </li>
+        </ul>
+        <svg class="burger" width="199" height="50"><use href=""></use></svg>
+      </nav>
+    </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
-    <script src="./js/main.js"></script>
-    <!-- <script src="./js/modal.js" type="module"></script> -->
-    <!-- <script src="./js/menu.js" type="module"></script> -->
+    <script src="./js/main.js" type="module"></script>
+    <script src="./js/modal.js" type="module"></script>
+    <script src="./js/menu.js" type="module"></script>
   </body>
 </html>
