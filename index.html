@@ -1,450 +1,438 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="ice cream made with passion" />
-    <title>Ice Cream</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    />
-    <link rel="stylesheet" href="./css/main.min.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="container header__container">
-        <div class="header__box">
-          <a href="./index.html" class="logo">
-            <img src="./images/header-logo.png" alt="logo" />
-          </a>
-          <nav class="nav">
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a href="./index.html" class="nav__link nav__link--current">Home</a>
-              </li>
-              <li class="nav__item">
-                <a href="#gallery" class="nav__link">About us</a>
-              </li>
-              <li class="nav__item">
-                <a href="#about" class="nav__link">How it’s made?</a>
-              </li>
-              <li class="nav__item">
-                <a href="#products" class="nav__link">Our products</a>
-              </li>
-              <li class="nav__item">
-                <a href="#contacts" class="nav__link">Contact</a>
-              </li>
-            </ul>
-            <svg class="burger" width="199" height="50"><use href=""></use></svg>
-          </nav>
-          <div class="header__box-burger">
-            <button class="burger" data-menu-button>
-              <svg height="40" width="40">
-                <use href="./images/symbol.svg#burger-open"></use>
-              </svg>
-            </button>
-            <button class="btn header__btn" data-modal-open>
-              Buy now
-              <span class="contacts__btn-span2"></span>
-            </button>
-          </div>
-        </div>
-        <div class="hero">
-          <div class="hero__box">
-            <div class="hero__thumb">
-              <h1 class="hero__title">
-                <span class="hero__span">ice cream made with</span>
-                passion
-              </h1>
-              <ul class="hero__list">
-                <li class="hero__item">
-                  <a href="#products" class="hero__link hero__link--red">Products</a>
-                </li>
-                <li class="hero__item">
-                  <a href="#about" class="hero__link hero__link--white">How it’s made?</a>
-                </li>
-              </ul>
-            </div>
-            <ul class="hero__numbers-list">
-              <li class="hero__number-item">
-                <p class="hero__number-text">
-                  16
-                  <span class="hero__number-span">cafes</span>
-                </p>
-              </li>
-              <li class="hero__number-item">
-                <p class="hero__number-text">
-                  23
-                  <span class="hero__number-span">food trucks</span>
-                </p>
-              </li>
-            </ul>
-          </div>
-          <p class="hero__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et
-          </p>
-          <button class="hero__btn" data-modal-open></button>
-        </div>
-      </div>
-    </header>
-    <main>
-      <section class="products" id="products">
-        <div class="container">
-          <p class="products__label">100% natural</p>
-          <h2 class="products__title">products</h2>
-          <ul class="products__list">
-            <li class="products__item products__item--bgc1">
-              <h3 class="products__name products__name--icon1">ice cream</h3>
-              <p class="products__text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et. dolore magna aliqua facilisis.
-              </p>
-              <button class="products__btn"></button>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ice cream made with passion">
+  <title>Ice Cream</title>
+  <link type="image/png" sizes="32x32" rel="icon" href="./images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <div class="header__box">
+        <a href="./index.html" class="logo">
+          <img src="./images/header-logo.png" alt="logo">
+        </a>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="./index.html" class="nav__link nav__link--current">Home</a>
             </li>
-            <li class="products__item products__item--bgc2 products__name--icon2">
-              <h3 class="products__name">ice coffee</h3>
-              <p class="products__text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et. dolore magna aliqua facilisis.
-              </p>
-              <button class="products__btn"></button>
+            <li class="nav__item">
+              <a href="#gallery" class="nav__link">About us</a>
             </li>
-            <li class="products__item products__item--bgc3 products__name--icon3">
-              <h3 class="products__name">milkshakes</h3>
-              <p class="products__text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et. dolore magna aliqua facilisis.
-              </p>
-              <button class="products__btn"></button>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">How it’s made?</a>
+            </li>
+            <li class="nav__item">
+              <a href="#products" class="nav__link">Our products</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contacts" class="nav__link">Contact</a>
             </li>
           </ul>
-        </div>
-      </section>
-      <section class="about" id="about">
-        <div class="container">
-          <p class="about__label">tradition and love</p>
-          <h2 class="about__title">how it’s made?</h2>
-          <div class="about__box">
-            <img src="./images/about-img.png" alt="milk" class="about__img" />
-            <div class="about__thumb-text">
-              <p class="about__subtitle">
-                Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus,
-                faucibus lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
-              </p>
-              <p class="about__text">
-                Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris
-                rhoncus orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula
-                volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.
-                <br />
-                <br />
-                Aliquam erat volutpat. Aenean accumsan.
-              </p>
-              <button class="btn about__btn">
-                Read more
-                <span class="about__btn-icon"></span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="advantages">
-        <div class="container">
-          <h2 class="visually-hidden">Advantages</h2>
-          <ul class="advantages__list">
-            <li class="advantages__item">
-              <p class="advantages__sub advantages__sub--icon1">721</p>
-              <p class="advantages__text">
-                Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
-              </p>
-            </li>
-            <li class="advantages__item">
-              <p class="advantages__sub advantages__sub--icon2">16kg</p>
-              <p class="advantages__text">
-                Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
-              </p>
-            </li>
-            <li class="advantages__item">
-              <p class="advantages__sub advantages__sub--icon3">84</p>
-              <p class="advantages__text">
-                Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="gallery" id="gallery">
-        <div class="container">
-          <img src="./images/gallery.png" alt="gallery photo" class="gallery__img" />
-        </div>
-      </section>
-      <section class="cast-rev">
-        <h2 class="visually-hidden">Customer Reviews</h2>
-        <div class="container cast-rev__container">
-          <div class="cast-rev__box">
-            <div class="cast-rev__slide">
-              <img src="./images/rev1.png" alt="photo client" class="cast__rev__img" />
-              <div class="cast-rev_thumb">
-                <p class="cast-rev__rev">
-                  Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
-                  hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
-                </p>
-              </div>
-
-              <p class="cast-rev__name">Emily, Los Angeles</p>
-            </div>
-          </div>
-
-          <div class="cast-rev__box">
-            <div class="cast-rev__slide">
-              <img src="./images/rev2.png" alt="photo client" class="cast__rev__img" />
-              <div class="cast-rev_thumb">
-                <p class="cast-rev__rev">
-                  Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
-                  hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
-                </p>
-              </div>
-              <p class="cast-rev__name">Emily, Los Angeles</p>
-            </div>
-          </div>
-
-          <div class="cast-rev__box">
-            <div class="cast-rev__slide">
-              <img src="./images/rev3.png" alt="photo client" class="cast__rev__img" />
-              <div class="cast-rev_thumb">
-                <p class="cast-rev__rev">
-                  Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
-                  hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
-                </p>
-              </div>
-              <p class="cast-rev__name">Emily, Los Angeles</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="contacts" id="contacts">
-        <h2 class="visually-hidden">Contacts</h2>
-        <div class="container">
-          <ul class="contacts__list">
-            <li class="contacts__item">
-              <address class="address">
-                <p class="address__type">CAFE</p>
-                <p class="address__city">Chicago</p>
-                <p class="address__street">
-                  Fusce ut velit laoreet, tempus arcu molestie vulputate
-                </p>
-                <div class="address__box">
-                  <p class="address__sch">Monday - Friday</p>
-                  <p class="address__time">06:00 AM - 10:00 PM</p>
-                  <p class="address__sch address__sch--margin">Saturday - Sunday</p>
-                  <p class="address__time">08:00 AM - 16:00 PM</p>
-                </div>
-                <a href="tel:+610383766284" class="address__phone">+61(0) 383 766 284 </a>
-                <a href="mailto:noreply@envato.com" class="address__email">noreply@envato.com</a>
-              </address>
-            </li>
-            <li class="contacts__item">
-              <address class="address">
-                <p class="address__type address__type--bgc">FOODTRUCK</p>
-                <p class="address__city">Los Angeles</p>
-                <p class="address__street">
-                  Fusce ut velit laoreet, tempus arcu molestie vulputate
-                </p>
-                <div class="address__box">
-                  <p class="address__sch">Monday - Friday</p>
-                  <p class="address__time">06:00 AM - 10:00 PM</p>
-                  <p class="address__sch address__sch--margin">Saturday - Sunday</p>
-                  <p class="address__time">08:00 AM - 16:00 PM</p>
-                </div>
-                <a href="tel:+610383766284" class="address__phone">+61(0) 383 766 284 </a>
-                <a href="mailto:noreply@envato.com" class="address__email">noreply@envato.com</a>
-              </address>
-            </li>
-            <li class="contacts__item">
-              <address class="address">
-                <p class="address__type">CAFE</p>
-                <p class="address__city">New York</p>
-                <p class="address__street">
-                  Fusce ut velit laoreet, tempus arcu molestie vulputate
-                </p>
-                <div class="address__box">
-                  <p class="address__sch">Monday - Friday</p>
-                  <p class="address__time">06:00 AM - 10:00 PM</p>
-                  <p class="address__sch address__sch--margin">Saturday - Sunday</p>
-                  <p class="address__time">08:00 AM - 16:00 PM</p>
-                </div>
-                <a href="tel:+610383766284" class="address__phone">+61(0) 383 766 284 </a>
-                <a href="mailto:noreply@envato.com" class="address__email">noreply@envato.com</a>
-              </address>
-            </li>
-          </ul>
-          <div class="contacts__flex">
-            <button class="btn contacts__btn-loc">
-              Our Locations
-              <span class="contacts__btn-span1"></span>
-            </button>
-            <button class="btn contacts__btn-franch">
-              Franchise
-              <span class="contacts__btn-span2"></span>
-            </button>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="container">
-        <div class="footer__flex">
-          <div class="footer__box">
-            <p class="footer__lable">homemade ice cream made</p>
-            <p class="footer__text">with passion</p>
-          </div>
-          <div class="footer__thumb">
-            <ul class="social">
-              <li class="social__item">
-                <a href="#" class="social__link">
-                  <svg width="20" height="20">
-                    <use href="./images/symbol.svg#icon-github"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a href="#" class="social__link">
-                  <svg width="20" height="16">
-                    <use href="./images/symbol.svg#icon-telegram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item">
-                <a href="#" class="social__link">
-                  <svg width="10" height="20">
-                    <use href="./images/symbol.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-            <p class="footer__phone">
-              Feel free to contact
-              <a href="tel:+610383766284" class="footer__tel"> +61 (0) 383 766 284</a>
-            </p>
-          </div>
-        </div>
-        <span class="footer__line"></span>
-        <p class="footer__license">&#169; 2022 - IceCream. All Rights Reserved.</p>
-      </div>
-    </footer>
-
-    <!-- -------- modal -------- -->
-   
-    <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <form class="form">
-          <h2 class="form__title">Leave your contacts, we will call you back</h2>
-          <label class="form__label"
-            >Name
-            <input class="form__input" type="text" name="name" />
-            <svg class="form__icon" height="18" width="18">
-              <use href="./images/symbol.svg#modal1"></use>
-            </svg>
-          </label>
-
-          <label class="form__label"
-            >Phone number
-            <input class="form__input" type="tel" name="name" />
-            <svg class="form__icon" height="18" width="18">
-              <use href="./images/symbol.svg#modal2"></use>
-            </svg>
-          </label>
-
-          <label class="form__label"
-            >Email
-            <input class="form__input" type="email" name="name" />
-            <svg class="form__icon" height="18" width="18">
-              <use href="./images/symbol.svg#modal3"></use>
-            </svg>
-          </label>
-
-          <label class="form__label form__label--margin"
-            >Сomment
-            <textarea
-              class="form__textarea"
-              name="feedback"
-              rows="10"
-              placeholder="Enter text"
-            ></textarea>
-          </label>
-
-          <label class="form__check">
-            <input class="form__check-input" type="checkbox" name="check" />
-            <span class="form__check-icon"></span>
-
-            I agree with the newsletter and accept&nbsp;
-            <a class="form__check-link" href="">Terms of an agreement</a>
-          </label>
-
-          <button class="button form__button" type="submit">Send</button>
-        </form>
-
-        <button class="modal__close" data-modal-close>
-          <svg height="11" width="11">
-            <use href="./images/symbol.svg#close"></use>
+          <svg class="burger" width="199" height="50">
+            <use href=""></use>
           </svg>
-        </button>
+        </nav>
+        <div class="header__box-burger">
+          <button class="burger" data-menu-button>
+            <svg height="40" width="40">
+              <use href="./images/symbol.svg#burger-open"></use>
+            </svg>
+          </button>
+          <button class="btn header__btn" data-modal-open>
+            Buy now
+            <span class="contacts__btn-span2"></span>
+          </button>
+        </div>
+      </div>
+      <div class="hero">
+        <div class="hero__box">
+          <div class="hero__thumb">
+            <h1 class="hero__title">
+              <span class="hero__span">ice cream made with</span>
+              passion
+            </h1>
+            <ul class="hero__list">
+              <li class="hero__item">
+                <a href="#products" class="hero__link hero__link--red">Products</a>
+              </li>
+              <li class="hero__item">
+                <a href="#about" class="hero__link hero__link--white">How it’s made?</a>
+              </li>
+            </ul>
+          </div>
+          <ul class="hero__numbers-list">
+            <li class="hero__number-item">
+              <p class="hero__number-text">
+                16
+                <span class="hero__number-span">cafes</span>
+              </p>
+            </li>
+            <li class="hero__number-item">
+              <p class="hero__number-text">
+                23
+                <span class="hero__number-span">food trucks</span>
+              </p>
+            </li>
+          </ul>
+        </div>
+        <p class="hero__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et
+        </p>
+        <button class="hero__btn" data-modal-open></button>
       </div>
     </div>
-
-    <!-- --------------- MOB MENU -------------------- -->
-    <div class="container menu">
-      <button class="menu__btn" data-menu-close>
-        <svg height="40" width="40">
-          <use href="./images/symbol.svg#burger-close"></use>
-        </svg>
-      </button>
-      <button class="btn header__btn menu__btn-buy" data-modal-open-mobile>
-        Buy now
-        <span class="contacts__btn-span2 menu__span"></span>
-      </button>
-      <nav class="nav nav--active">
-        <ul class="nav__list nav--flex js-close-menu">
-          <li class="nav__item--mob">
-            <a href="./index.html" class="nav__link nav__link--current">Home</a>
+  </header>
+  <main>
+    <section class="products" id="products">
+      <div class="container">
+        <p class="products__label">100% natural</p>
+        <h2 class="products__title">products</h2>
+        <ul class="products__list">
+          <li class="products__item products__item--bgc1">
+            <h3 class="products__name products__name--icon1">ice cream</h3>
+            <p class="products__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et. dolore magna aliqua facilisis.
+            </p>
+            <button class="products__btn"></button>
           </li>
-          <li class="nav__item--mob">
-            <a href="#gallery" class="nav__link">About us</a>
+          <li class="products__item products__item--bgc2 products__name--icon2">
+            <h3 class="products__name">ice coffee</h3>
+            <p class="products__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et. dolore magna aliqua facilisis.
+            </p>
+            <button class="products__btn"></button>
           </li>
-          <li class="nav__item--mob">
-            <a href="#about" class="nav__link">How it’s made?</a>
-          </li>
-          <li class="nav__item--mob">
-            <a href="#products" class="nav__link">Our products</a>
-          </li>
-          <li class="nav__item--mob">
-            <a href="#contacts" class="nav__link">Contact</a>
+          <li class="products__item products__item--bgc3 products__name--icon3">
+            <h3 class="products__name">milkshakes</h3>
+            <p class="products__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et. dolore magna aliqua facilisis.
+            </p>
+            <button class="products__btn"></button>
           </li>
         </ul>
-        <svg class="burger" width="199" height="50"><use href=""></use></svg>
-      </nav>
-    </div>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="container">
+        <p class="about__label">tradition and love</p>
+        <h2 class="about__title">how it’s made?</h2>
+        <div class="about__box">
+          <img src="./images/about-img.png" alt="milk" class="about__img">
+          <div class="about__thumb-text">
+            <p class="about__subtitle">
+              Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus,
+              faucibus lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
+            </p>
+            <p class="about__text">
+              Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris
+              rhoncus orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula
+              volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.
+              <br>
+              <br>
+              Aliquam erat volutpat. Aenean accumsan.
+            </p>
+            <button class="btn about__btn">
+              Read more
+              <span class="about__btn-icon"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="advantages">
+      <div class="container">
+        <h2 class="visually-hidden">Advantages</h2>
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <p class="advantages__sub advantages__sub--icon1">721</p>
+            <p class="advantages__text">
+              Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+            </p>
+          </li>
+          <li class="advantages__item">
+            <p class="advantages__sub advantages__sub--icon2">16kg</p>
+            <p class="advantages__text">
+              Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+            </p>
+          </li>
+          <li class="advantages__item">
+            <p class="advantages__sub advantages__sub--icon3">84</p>
+            <p class="advantages__text">
+              Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="gallery" id="gallery">
+      <h2 class="visually-hidden">Gallery</h2>
+      <div class="container">
+        <img src="./images/gallery.png" alt="gallery photo" class="gallery__img">
+      </div>
+    </section>
+    <section class="cast-rev">
+      <h2 class="visually-hidden">Customer Reviews</h2>
+      <div class="container cast-rev__container">
+        <div class="cast-rev__box">
+          <div class="cast-rev__slide">
+            <img src="./images/rev1.png" alt="photo client" class="cast__rev__img">
+            <div class="cast-rev_thumb">
+              <p class="cast-rev__rev">
+                Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+                hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+              </p>
+            </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script
-      type="text/javascript"
-      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
-    <script src="./js/main.js" type="module"></script>
-    <script src="./js/modal.js" type="module"></script>
-    <script src="./js/menu.js" type="module"></script>
-  </body>
+            <p class="cast-rev__name">Emily, Los Angeles</p>
+          </div>
+        </div>
+
+        <div class="cast-rev__box">
+          <div class="cast-rev__slide">
+            <img src="./images/rev2.png" alt="photo client" class="cast__rev__img">
+            <div class="cast-rev_thumb">
+              <p class="cast-rev__rev">
+                Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+                hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+              </p>
+            </div>
+            <p class="cast-rev__name">Emily, Los Angeles</p>
+          </div>
+        </div>
+
+        <div class="cast-rev__box">
+          <div class="cast-rev__slide">
+            <img src="./images/rev3.png" alt="photo client" class="cast__rev__img">
+            <div class="cast-rev_thumb">
+              <p class="cast-rev__rev">
+                Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+                hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+              </p>
+            </div>
+            <p class="cast-rev__name">Emily, Los Angeles</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contacts" id="contacts">
+      <h2 class="visually-hidden">Contacts</h2>
+      <div class="container">
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <address class="address">
+              <p class="address__type">CAFE</p>
+              <p class="address__city">Chicago</p>
+              <p class="address__street">
+                Fusce ut velit laoreet, tempus arcu molestie vulputate
+              </p>
+              <div class="address__box">
+                <p class="address__sch">Monday - Friday</p>
+                <p class="address__time">06:00 AM - 10:00 PM</p>
+                <p class="address__sch address__sch--margin">Saturday - Sunday</p>
+                <p class="address__time">08:00 AM - 16:00 PM</p>
+              </div>
+              <a href="tel:+610383766284" class="address__phone">+61(0) 383 766 284 </a>
+              <a href="mailto:noreply@envato.com" class="address__email">noreply@envato.com</a>
+            </address>
+          </li>
+          <li class="contacts__item">
+            <address class="address">
+              <p class="address__type address__type--bgc">FOODTRUCK</p>
+              <p class="address__city">Los Angeles</p>
+              <p class="address__street">
+                Fusce ut velit laoreet, tempus arcu molestie vulputate
+              </p>
+              <div class="address__box">
+                <p class="address__sch">Monday - Friday</p>
+                <p class="address__time">06:00 AM - 10:00 PM</p>
+                <p class="address__sch address__sch--margin">Saturday - Sunday</p>
+                <p class="address__time">08:00 AM - 16:00 PM</p>
+              </div>
+              <a href="tel:+610383766284" class="address__phone">+61(0) 383 766 284 </a>
+              <a href="mailto:noreply@envato.com" class="address__email">noreply@envato.com</a>
+            </address>
+          </li>
+          <li class="contacts__item">
+            <address class="address">
+              <p class="address__type">CAFE</p>
+              <p class="address__city">New York</p>
+              <p class="address__street">
+                Fusce ut velit laoreet, tempus arcu molestie vulputate
+              </p>
+              <div class="address__box">
+                <p class="address__sch">Monday - Friday</p>
+                <p class="address__time">06:00 AM - 10:00 PM</p>
+                <p class="address__sch address__sch--margin">Saturday - Sunday</p>
+                <p class="address__time">08:00 AM - 16:00 PM</p>
+              </div>
+              <a href="tel:+610383766284" class="address__phone">+61(0) 383 766 284 </a>
+              <a href="mailto:noreply@envato.com" class="address__email">noreply@envato.com</a>
+            </address>
+          </li>
+        </ul>
+        <div class="contacts__flex">
+          <button class="btn contacts__btn-loc">
+            Our Locations
+            <span class="contacts__btn-span1"></span>
+          </button>
+          <button class="btn contacts__btn-franch">
+            Franchise
+            <span class="contacts__btn-span2"></span>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__flex">
+        <div class="footer__box">
+          <p class="footer__lable">homemade ice cream made</p>
+          <p class="footer__text">with passion</p>
+        </div>
+        <div class="footer__thumb">
+          <ul class="social">
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <svg width="20" height="20">
+                  <use href="./images/symbol.svg#icon-github"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <svg width="20" height="16">
+                  <use href="./images/symbol.svg#icon-telegram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <svg width="10" height="20">
+                  <use href="./images/symbol.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <p class="footer__phone">
+            Feel free to contact
+            <a href="tel:+610383766284" class="footer__tel"> +61 (0) 383 766 284</a>
+          </p>
+        </div>
+      </div>
+      <span class="footer__line"></span>
+      <p class="footer__license">&#169; 2022 - IceCream. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <form class="form">
+        <h2 class="form__title">Leave your contacts, we will call you back</h2>
+        <label class="form__label">Name
+          <input class="form__input" type="text" name="name">
+          <svg class="form__icon" height="18" width="18">
+            <use href="./images/symbol.svg#modal1"></use>
+          </svg>
+        </label>
+
+        <label class="form__label">Phone number
+          <input class="form__input" type="tel" name="name">
+          <svg class="form__icon" height="18" width="18">
+            <use href="./images/symbol.svg#modal2"></use>
+          </svg>
+        </label>
+
+        <label class="form__label">Email
+          <input class="form__input" type="email" name="name">
+          <svg class="form__icon" height="18" width="18">
+            <use href="./images/symbol.svg#modal3"></use>
+          </svg>
+        </label>
+
+        <label class="form__label form__label--margin">Сomment
+          <textarea class="form__textarea" name="feedback" rows="10" placeholder="Enter text"></textarea>
+        </label>
+
+        <label class="form__check">
+          <input class="form__check-input" type="checkbox" name="check">
+          <span class="form__check-icon"></span>
+
+          I agree with the newsletter and accept&nbsp;
+          <a class="form__check-link" href="">Terms of an agreement</a>
+        </label>
+
+        <button class="button form__button" type="submit">Send</button>
+      </form>
+
+      <button class="modal__close" data-modal-close>
+        <svg height="11" width="11">
+          <use href="./images/symbol.svg#close"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+
+
+  <div class="container menu">
+    <button class="menu__btn" data-menu-close>
+      <svg height="40" width="40">
+        <use href="./images/symbol.svg#burger-close"></use>
+      </svg>
+    </button>
+    <button class="btn header__btn menu__btn-buy" data-modal-open-mobile>
+      Buy now
+      <span class="contacts__btn-span2 menu__span"></span>
+    </button>
+    <nav class="nav nav--active">
+      <ul class="nav__list nav--flex js-close-menu">
+        <li class="nav__item--mob">
+          <a href="./index.html" class="nav__link nav__link--current">Home</a>
+        </li>
+        <li class="nav__item--mob">
+          <a href="#gallery" class="nav__link">About us</a>
+        </li>
+        <li class="nav__item--mob">
+          <a href="#about" class="nav__link">How it’s made?</a>
+        </li>
+        <li class="nav__item--mob">
+          <a href="#products" class="nav__link">Our products</a>
+        </li>
+        <li class="nav__item--mob">
+          <a href="#contacts" class="nav__link">Contact</a>
+        </li>
+      </ul>
+      <svg class="burger" width="199" height="50">
+        <use href=""></use>
+      </svg>
+    </nav>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="./js/main.js" type="module"></script>
+  <script src="./js/modal.js" type="module"></script>
+  <script src="./js/menu.js" type="module"></script>
+</body>
+
 </html>
